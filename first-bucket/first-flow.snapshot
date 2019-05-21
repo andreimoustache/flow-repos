@@ -1,0 +1,62 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "some-group",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 530.0,
+      "y" : 320.0
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.8.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+      "identifier" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
+      "name" : "Base64EncodeContent",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 667.0,
+        "y" : 325.0
+      },
+      "properties" : {
+        "Mode" : "Encode"
+      },
+      "propertyDescriptors" : {
+        "Mode" : {
+          "displayName" : "Mode",
+          "identifiesControllerService" : false,
+          "name" : "Mode",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.Base64EncodeContent",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
