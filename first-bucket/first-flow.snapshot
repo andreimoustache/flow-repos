@@ -1,62 +1,154 @@
 {
   "header" : {
-    "dataModelVersion" : "2"
+    "dataModelVersion" : "3"
   },
   "content" : {
-    "comments" : "",
-    "componentType" : "PROCESS_GROUP",
-    "connections" : [ ],
-    "controllerServices" : [ ],
-    "funnels" : [ ],
-    "identifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
-    "inputPorts" : [ ],
-    "labels" : [ ],
-    "name" : "some-group",
-    "outputPorts" : [ ],
-    "position" : {
-      "x" : 530.0,
-      "y" : 320.0
-    },
-    "processGroups" : [ ],
-    "processors" : [ {
-      "autoTerminatedRelationships" : [ ],
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-standard-nar",
-        "group" : "org.apache.nifi",
-        "version" : "1.8.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
-      "identifier" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
-      "name" : "Base64EncodeContent",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 667.0,
-        "y" : 325.0
-      },
-      "properties" : {
-        "Mode" : "Encode"
-      },
-      "propertyDescriptors" : {
-        "Mode" : {
-          "displayName" : "Mode",
-          "identifiesControllerService" : false,
-          "name" : "Mode",
-          "sensitive" : false
-        }
-      },
-      "runDurationMillis" : 0,
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.standard.Base64EncodeContent",
-      "yieldDuration" : "1 sec"
-    } ],
-    "remoteProcessGroups" : [ ],
-    "variables" : { }
+    "flowSnapshot" : {
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+            "id" : "6775a5bc-bebd-37a1-b255-eca4687e6380",
+            "name" : "CryptographicHashAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+          "identifier" : "6f963245-3073-3c29-9e48-5f1ec9e9c942",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure", "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+            "id" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
+            "name" : "Base64EncodeContent",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "funnels" : [ ],
+        "identifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "some-group",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 530.0,
+          "y" : 320.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.8.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+          "identifier" : "6775a5bc-bebd-37a1-b255-eca4687e6380",
+          "name" : "CryptographicHashAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 929.0,
+            "y" : 229.0
+          },
+          "properties" : {
+            "character_set" : "UTF-8",
+            "hash_algorithm" : "SHA-256",
+            "missing_attr_policy" : "ALLOW",
+            "fail_when_empty" : "true"
+          },
+          "propertyDescriptors" : {
+            "character_set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character_set",
+              "sensitive" : false
+            },
+            "hash_algorithm" : {
+              "displayName" : "Hash Algorithm",
+              "identifiesControllerService" : false,
+              "name" : "hash_algorithm",
+              "sensitive" : false
+            },
+            "missing_attr_policy" : {
+              "displayName" : "Missing attribute policy",
+              "identifiesControllerService" : false,
+              "name" : "missing_attr_policy",
+              "sensitive" : false
+            },
+            "fail_when_empty" : {
+              "displayName" : "Fail when no attributes present",
+              "identifiesControllerService" : false,
+              "name" : "fail_when_empty",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.CryptographicHashAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.8.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+          "identifier" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
+          "name" : "Base64EncodeContent",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 374.0,
+            "y" : 236.0
+          },
+          "properties" : {
+            "Mode" : "Encode"
+          },
+          "propertyDescriptors" : {
+            "Mode" : {
+              "displayName" : "Mode",
+              "identifiesControllerService" : false,
+              "name" : "Mode",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.Base64EncodeContent",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      }
+    }
   }
 }

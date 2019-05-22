@@ -1,4 +1,5 @@
 flows:
-  e9a6864d-3264-4c0a-9eb8-ed7d8e66eec2: {ver: 1, file: first-flow.snapshot}
+  e9a6864d-3264-4c0a-9eb8-ed7d8e66eec2: {ver: 2, file: first-flow.snapshot, comments: Adds
+      another processor, author: anonymous, created: 1558513735874, flowName: first-flow}
 layoutVer: 1
 bucketId: 3e2431b6-2a47-4d8f-9a80-fa5b924545d8
