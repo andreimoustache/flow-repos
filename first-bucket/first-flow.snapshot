@@ -14,13 +14,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+            "groupId" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
             "id" : "6775a5bc-bebd-37a1-b255-eca4687e6380",
             "name" : "CryptographicHashAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+          "groupIdentifier" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
           "identifier" : "6f963245-3073-3c29-9e48-5f1ec9e9c942",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -28,10 +28,10 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success" ],
+          "selectedRelationships" : [ "success", "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+            "groupId" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
             "id" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
             "name" : "Base64EncodeContent",
             "type" : "PROCESSOR"
@@ -40,14 +40,14 @@
         } ],
         "controllerServices" : [ ],
         "funnels" : [ ],
-        "identifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+        "identifier" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "some-group",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 530.0,
-          "y" : 320.0
+          "x" : 384.0,
+          "y" : 146.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -56,18 +56,55 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.8.0"
+            "version" : "1.9.0"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
+          "groupIdentifier" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
+          "identifier" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
+          "name" : "Base64EncodeContent",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 374.0,
+            "y" : 236.0
+          },
+          "properties" : {
+            "Mode" : "Encode"
+          },
+          "propertyDescriptors" : {
+            "Mode" : {
+              "displayName" : "Mode",
+              "identifiesControllerService" : false,
+              "name" : "Mode",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.Base64EncodeContent",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "35f1e640-bacc-3c53-bf81-2447edc3794b",
           "identifier" : "6775a5bc-bebd-37a1-b255-eca4687e6380",
           "name" : "CryptographicHashAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 929.0,
+            "x" : 1055.0,
             "y" : 229.0
           },
           "properties" : {
@@ -107,43 +144,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.CryptographicHashAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.8.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "259752e9-2991-355d-ae50-7e95cc39ed46",
-          "identifier" : "ba35b3c0-d893-3f50-ab62-2d4d1ada5faa",
-          "name" : "Base64EncodeContent",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 374.0,
-            "y" : 236.0
-          },
-          "properties" : {
-            "Mode" : "Encode"
-          },
-          "propertyDescriptors" : {
-            "Mode" : {
-              "displayName" : "Mode",
-              "identifiesControllerService" : false,
-              "name" : "Mode",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.Base64EncodeContent",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
