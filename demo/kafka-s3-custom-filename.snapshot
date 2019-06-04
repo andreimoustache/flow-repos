@@ -767,8 +767,8 @@
           "properties" : {
             "max.poll.records" : "10000",
             "record-writer" : "69d9fc5d-ee7d-34cf-a6cc-c2adb74e7c1d",
-            "group.id" : "nifi-kafka-s3-price",
-            "bootstrap.servers" : "queue.nl.wehkamp.dev.blaze.ps:9092",
+            "group.id" : "nifi-kafka-s3-price-demo",
+            "bootstrap.servers" : "queue.nl.wehkamp.prod.blaze.ps:9092",
             "topic_type" : "names",
             "security.protocol" : "PLAINTEXT",
             "max-uncommit-offset-wait" : "1 secs",
