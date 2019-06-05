@@ -1,6 +1,6 @@
 flows:
-  fecc470e-ceb7-42d8-968d-639b15947e2e: {ver: 2, file: kafka-s3-custom-filename.snapshot,
-    comments: Change source to be Kafka PROD, author: anonymous, created: 1559658267694,
+  fecc470e-ceb7-42d8-968d-639b15947e2e: {ver: 3, file: kafka-s3-custom-filename.snapshot,
+    comments: Spread processors out for readability, author: anonymous, created: 1559723834437,
     flowName: kafka-s3-custom-filename, flowDesc: Consumes the Kafka `price` topic
       and writes the messages on S3 using the product number and size code as the
       filename.}

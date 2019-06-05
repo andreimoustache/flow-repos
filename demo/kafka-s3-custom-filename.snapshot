@@ -252,21 +252,7 @@
         "funnels" : [ ],
         "identifier" : "bb52946c-bfb1-3fc0-b266-26a7b885f7a6",
         "inputPorts" : [ ],
-        "labels" : [ {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "bb52946c-bfb1-3fc0-b266-26a7b885f7a6",
-          "height" : 482.4818572998047,
-          "identifier" : "78351566-28b5-32af-a50b-15e7bdb8da1a",
-          "label" : "Custom filename",
-          "position" : {
-            "x" : 434.0,
-            "y" : 288.0
-          },
-          "style" : {
-            "font-size" : "20px"
-          },
-          "width" : 2408.4640045166016
-        } ],
+        "labels" : [ ],
         "name" : "kafka-s3-custom-filename",
         "outputPorts" : [ ],
         "position" : {
@@ -363,7 +349,7 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1380.888026523824,
+            "x" : 1323.113856601949,
             "y" : 347.926329803656
           },
           "properties" : {
@@ -426,7 +412,7 @@
           "name" : "PutS3Object",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1887.7714160453872,
+            "x" : 1755.7161181938247,
             "y" : 351.8337171292394
           },
           "properties" : {
@@ -673,8 +659,8 @@
           "name" : "EvaluateJsonFailureCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 898.657341338356,
-            "y" : 562.0510633206457
+            "x" : 894.530632353981,
+            "y" : 614.3229139065832
           },
           "properties" : {
             "counter-name" : "EvaluateJsonFailureCounter",
@@ -717,8 +703,8 @@
           "name" : "SuccessfulUploadCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2424.473808623512,
-            "y" : 350.3089368558019
+            "x" : 2197.503837920387,
+            "y" : 351.6845166897863
           },
           "properties" : {
             "counter-name" : "SuccessfulUploadCounter",
@@ -892,7 +878,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 467.90825686569974,
-            "y" : 565.3263318753332
+            "y" : 618.9737928128332
           },
           "properties" : {
             "counter-name" : "ReadFailureCounter",
@@ -935,8 +921,8 @@
           "name" : "EvaluateJsonUnmatchedCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1371.8190845024185,
-            "y" : 565.8447034573644
+            "x" : 1337.4296802055435,
+            "y" : 611.2386243558019
           },
           "properties" : {
             "counter-name" : "EvaluateJsonUnmatchedCounter",
@@ -979,8 +965,8 @@
           "name" : "FailedUploadCounter",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1884.0883105766372,
-            "y" : 567.2691419339269
+            "x" : 1756.1597217094497,
+            "y" : 612.6631849026769
           },
           "properties" : {
             "counter-name" : "FailedUploadCounter",
